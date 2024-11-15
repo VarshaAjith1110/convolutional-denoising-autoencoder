@@ -92,7 +92,7 @@ x = layers.UpSampling2D((2, 2))(x)
 decoded = layers.Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
 
 autoencoder = keras.Model(input_img, decoded)
-print("Name: Thenmozhi P, Reg No: 21222130116")
+print("Name: VARSHA A, Reg No: 21222130118")
 autoencoder.summary()
 
 autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
@@ -105,7 +105,7 @@ history=autoencoder.fit(x_train_noisy, x_train_scaled,
 decoded_imgs = autoencoder.predict(x_test_noisy)
 
 n = 10
-print('Name: Thenmozhi P  Register Number: 212221230116    ')
+print('Name:VARSHA AJITH  Register Number: 212221230118    ')
 plt.figure(figsize=(20, 4))
 for i in range(1, n + 1):
     # Display original
@@ -130,7 +130,7 @@ for i in range(1, n + 1):
     ax.get_yaxis().set_visible(False)
 plt.show()
 
-print("Thenmozhi P, 212221230116")
+print("Varsha, 212221230118")
 plt.plot(history.history['loss'], label='Training Loss')
 plt.plot(history.history['val_loss'], label='Validation Loss')
 plt.title('Training and Validation Loss vs Iterations')
@@ -139,6 +139,8 @@ plt.ylabel('Loss')
 plt.legend()
 plt.grid(True)
 plt.show()
+
+
 ```
 ## OUTPUT
 
